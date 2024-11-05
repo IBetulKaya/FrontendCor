@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Narnia" />
+        <module name="demo" />
+        <module name="CashRegister" />
+        <module name="demo (2)" />
+        <module name="filter-demo" />
+        <module name="demo (1)" />
+        <module name="demo (4)" />
+        <module name="movietheater" />
+        <module name="demo (3)" />
+        <module name="june6" />
+        <module name="june6 (1)" />
+        <module name="fronted" />
+        <module name="OCP" />
+        <module name="june6 (2)" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="demo (1)" options="-parameters" />
+      <module name="demo (2)" options="-parameters" />
+      <module name="demo (3)" options="-parameters" />
+      <module name="demo (4)" options="-parameters" />
+      <module name="filter-demo" options="-parameters" />
+      <module name="fronted" options="-parameters" />
+      <module name="june6" options="-parameters" />
+      <module name="june6 (1)" options="-parameters" />
+      <module name="june6 (2)" options="-parameters" />
+      <module name="movietheater" options="-parameters" />
+    </option>
+  </component>
+</project>

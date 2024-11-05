@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+  <div th:replace="~{fragments/head :: metas}"/>
+  <title>Home page</title>
+  <div th:replace="~{fragments/head :: styles}"/>
+  <div th:replace="~{fragments/head :: scripts}"/>
+
+</head>
+<body>
+
+<div th:replace="~{fragments/menu :: menu}">
+</div>
+<div th:replace="~{fragments/header :: header}">
+</div>
+
+<div class="w-50 mx-auto">
+  <p>This is the home page</p>
+</div>
+
+<div th:replace="~{fragments/footer :: footer}">
+</div>
+
+</body>
+</html>

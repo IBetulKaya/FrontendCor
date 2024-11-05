@@ -1,0 +1,10 @@
+
+
+server:
+  ssl:
+    key-store: classpath:academy-security.jks
+    key-store-password: academy
+    key-store-type: jks
+    key-alias: academy
+    key-password: academy
+  port: 8443

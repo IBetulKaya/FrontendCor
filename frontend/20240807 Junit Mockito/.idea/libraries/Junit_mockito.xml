@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Junit-mockito">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Junit-mockito.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

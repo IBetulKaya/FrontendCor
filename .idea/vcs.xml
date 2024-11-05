@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frontend/20240807 Junit Mockito/Junit-mockito" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/movietheater_broken" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/movietheater_broken/movietheater_broken" vcs="Git" />
+  </component>
+</project>

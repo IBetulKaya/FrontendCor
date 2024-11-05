@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatables</title>
+ 
+    <!-- This set will work. Newer versions might lead to strange result, but you can try -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+ 
+    <script src="js/datatable.js"></script>
+ 
+    <!--
+        We 'connect' an event to a function.
+        When the page is fully loaded by the browser
+        and all the resources are added,
+        this event will fire and the function will be executed.
+        Note: This is asynchronous!!!
+    -->
+    <script>
+        $( document ).ready(function() {
+            console.log( "initializing" );
+            init();
+        });
+    </script>
+ 
+</head>
+<body>
+    <!--     Simple menu  -->
+    <div class="container">
+        <a href="/index.html">Home</a> <a href="/datable.html">Datatable</a>
+    </div>
+ 
+    <div class="container" id="user">
+        <!--    User table -->
+        <h3>Current users in database:</h3>
+        <p/>
+        <table id="usertable" class="display mx-auto">
+        </table>
+    </div>
+</body>
+</html>

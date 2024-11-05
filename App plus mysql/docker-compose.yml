@@ -1,0 +1,44 @@
+version: "3.7"
+
+networks:
+   appnet:
+
+services:
+
+  app-service:
+    build: .
+    ports: 
+      - "8881:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-service:3306/molveno
+      SPRING_DATASOURCE_USERNAME: djs
+      SPRING_DATASOURCE_PASSWORD: djs
+    depends_on:
+      mysql-service:
+        condition: service_healthy
+    networks:
+      - appnet
+  
+  mysql-service:
+    image: mysql:latest
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports: 
+      - "3306:3306"
+    expose:
+      - "3306"
+    volumes:
+      - molveno:/var/lib/mysql     
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: djs
+      MYSQL_PASSWORD: djs
+      MYSQL_DATABASE: molveno
+    networks:
+      - appnet
+volumes:
+  molveno:     
